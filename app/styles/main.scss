@@ -3,3 +3,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 // endbower
 
+//login form
+.login-form
+{
+  margin-top: 120px;
+  .form-control
+  {
+    max-width: 280px;
+    margin: 0px auto;
+  }
+}
