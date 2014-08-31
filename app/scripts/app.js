@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'snap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -35,18 +36,16 @@ angular
         access: {isFree:false}
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/',
+        access:{isFree:true}
       });
   }).run(['$rootScope', '$location','session', function($rootscope, $location, session) {
-$rootscope.$on('$routeChangeSuccess', function(event,curView) { 
+$rootscope.$on('$routeChangeSuccess', function(event,curView,prevView) { 
   console.log(curView);
-  if (curView === undefined){
-    if(!session.isAuthenticated){
-      $location.path('#/login');
-  }
-  }
-  else{
+  console.log(prevView);
+  console.log(curView.access);
+  
   if(!curView.access.isFree && !session.isAuthenticated){
-      $location.path('#/login');
-  }}});
+      $location.path('/login');
+  }});
 }]);

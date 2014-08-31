@@ -10,8 +10,8 @@
 angular.module('demoSassApp')
   .controller('LoginCtrl', function ($scope,$location,authenticate,session) {
     $scope.errorOccurred=false;
-    $scope.login = function(user){
-    	authenticate.login(user)
+    $scope.login = function(){
+    	/*authenticate.login(user)
     	 .success(function(data){
     	 	session.username = user.username;
     	 	session.password = user.password;
@@ -19,7 +19,7 @@ angular.module('demoSassApp')
     	 	session.isAuthenticated =data.status;
     	 	console.log(session.isAuthenticated);
     	 	if(!session.isAuthenticaded){
-    	 		$location.path('#/main');
+    	 		$location.path('/main');
     	 	}
     	 	else
     	 	{
@@ -30,10 +30,13 @@ angular.module('demoSassApp')
 
     	 })
     	 .error(function(){
-    	 	$scope.loginError ='Error connecting to API Please try again later';
+    	 	$scope.loginError ='Invlaid Login Details';
     	 	$scope.errorOccurred=true;
-    	 });
+    	 });*/
+        session.isAuthenticated = true;
+        session.realname='Kieran Ware';
+        $location.path('/main');
     };
-
+ 
 
   });

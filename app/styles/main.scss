@@ -1,15 +1,151 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 // endbower
+// VAriables
+$font-stack:    'Raleway', sans-serif;
+$primary-color: #3498db;
+
+// html body standards
+html,body{
+	font-family: $font-stack;
+}
+// panel icons
+.panel-icon{
+	margin-right: 15px;
+}
+// logo
+.logo{
+	min-width: 122px;
+}
+// button
+.btn{
+	background-color: #fff;
+	color:$primary-color;
+	border-color: $primary-color;
+}
+.btn:hover{
+	background-color: $primary-color;
+	color:#fff;
+	border-color: #fff;
+	font-size: 15px;
+	
+}
+
+.btn:focus{
+	background-color: #fff;
+	color:$primary-color;
+	border-color: $primary-color;
+	outline: none;
+	
+}
+
+.btn:active{
+	outline: none;
+}
+
+
+// header buttons and logo
+.heading
+	{
+		.btn{
+			margin-top: 15px;
+		}
+		.left-head{
+			float: left;
+			
+		}
+		.right-head{
+			float: right;
+			
+		}
+		.middle-head{
+			position: fixed;
+			top: 5px;
+		}
+		.logo-img{
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top:15px;
+		}
+
+	}
 
 //login form
-.login-form
-{
-  margin-top: 120px;
-  .form-control
-  {
-    max-width: 280px;
-    margin: 0px auto;
-  }
+.login-bg{
+	position: fixed;
+	background-color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.login-form {
+    margin-top: 100px;
+    img{
+    	margin-bottom: 15px;
+    }
+    .alert {
+        max-width: 280px;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .form-control {
+        max-width: 280px;
+        margin: 0px auto;
+    }
+}
+
+// nav-panel
+	.side-panel{
+		background-color: $primary-color;
+		color: #fff;
+		font-family: $font-stack;
+		a{
+		 color: #fff;	
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		.side-panel-head{
+			margin-top: 25px;
+			margin-left: 15px;
+			font-size: 18px;
+		}	
+		.side-panel-item{
+			margin-left: 25px;
+			margin-right: 25px;
+			margin-top: 15px;
+			font-size: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			border-color: $primary-color;
+			border-radius: 5px;
+			border-width: 2px;
+			border-style: solid;
+
+		}
+		.side-panel-item:hover{
+			border-color: #fff;
+			background-color:#2980b9;
+			border-radius: 5px;
+			border-width: 2px;
+			border-style: solid;
+		}
+		.side-panel-item:focus{
+			border-color: #fff;
+			background-color:#2980b9;
+			border-radius: 5px;
+			border-width: 2px;
+			border-style: solid;
+		}
+	}
+
+//snap conte background colour
+.snap-content {
+    background-color: #fff;
 }
