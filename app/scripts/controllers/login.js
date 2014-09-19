@@ -8,18 +8,19 @@
  * Controller of the demoSassApp
  */
 angular.module('demoSassApp')
-  .controller('LoginCtrl', function ($scope,$location,authenticate,session) {
+  .controller('LoginCtrl', function ($scope,$location,authenticate,session,$rootScope) {
     $scope.errorOccurred=false;
-    $scope.login = function(){
-    	/*authenticate.login(user)
+    $scope.login = function(user){
+    	authenticate.login(user)
     	 .success(function(data){
+            console.log(data[0].status);
     	 	session.username = user.username;
     	 	session.password = user.password;
-    	 	session.realname = data.realname;
-    	 	session.isAuthenticated =data.status;
-    	 	console.log(session.isAuthenticated);
-    	 	if(!session.isAuthenticaded){
-    	 		$location.path('/main');
+    	 	session.realname = data[0].realname;
+    	 	session.isAuthenticated =data[0].status;
+    	 	if(session.isAuthenticated){
+                $rootScope.$broadcast('LOG_IN');
+    	 		$location.path('/summary');
     	 	}
     	 	else
     	 	{
@@ -29,13 +30,15 @@ angular.module('demoSassApp')
     	 	}
 
     	 })
-    	 .error(function(){
+    	 .error(function(data){
+            console.log('error');
+            console.log(data);
     	 	$scope.loginError ='Invlaid Login Details';
     	 	$scope.errorOccurred=true;
-    	 });*/
-        session.isAuthenticated = true;
+    	 });
+        /*session.isAuthenticated = true;
         session.realname='Kieran Ware';
-        $location.path('/main');
+        $location.path('/main');*/
     };
  
 

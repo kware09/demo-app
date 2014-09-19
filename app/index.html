@@ -9,57 +9,72 @@
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/angular-snap/angular-snap.css" />
+        <link rel="stylesheet" href="bower_components/typicons/src/font/typicons.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+        <!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/typicons/src/font/typicons.min.css" />
         </head>
         <body ng-app="demoSassApp" ng-controller="ApllicationCtrl">
+        <div class="navbar navbar-default navbar-fixed-top heading" role="navigation" ng-show="loggedIn">
+                <div class="header heading container-fluid">
+                    <div class="row">
+                        <div class="col-xs-4 ">
+                           <div class="left-head icons" snap-toggle="left"> 
+                            <span class="typcn typcn-th-menu button-icon"></span>
+                            </div>
+                            
+                        </div>
+                         <div class="col-xs-4"><div class="page-title text-center">{{pageTitle}}</div>
+                        </div>
+                        <div class="col-xs-4 ">
+                            <!--<div class="right-head icons" snap-toggle="right">
+                            <span class="glyphicon glyphicon-edit button-icon" ng-show="rightMenu"></span>
+                            </div>-->
+                            
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                </div>
+
             <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <!-- Add your site or application content here -->
-            <div class="container-fluid">
-                
-            </div>
             <div class="side-panel" snap-drawer>
-                <div class="side-panel-head">Menu</div>
-                <a href="#/main" snap-toggle="left"><div class="side-panel-item"><span class="glyphicon glyphicon-home panel-icon"></span>Home</div></a>
-                <div class="side-panel-item"><span class="glyphicon glyphicon-stats panel-icon"></span>Graph</div>
-                <div class="side-panel-item"><span class="glyphicon glyphicon-cloud-upload panel-icon"></span>Commands</div>
-                <div class="side-panel-item"><span class="glyphicon glyphicon-cloud-download panel-icon"></span>Notifications</div>
-                <div class="side-panel-item"><span class="glyphicon glyphicon-cog panel-icon"></span>Settings</div>
+                <!--<a href="#/main" snap-toggle="left"><div class="side-panel-item"><span class="glyphicon glyphicon-home panel-icon"></span>Home</div></a>
+                <a href="#/graphs" snap-toggle="left"><div class="side-panel-item"><span class="glyphicon glyphicon-stats panel-icon"></span>Graph</div></a>
+                <a href="#/commands" snap-toggle="left"><div class="side-panel-item"><span class="glyphicon glyphicon-cloud-upload panel-icon"></span>Commands</div></a>
+                <a href="#/events" snap-toggle="left"><div class="side-panel-item"><span class="glyphicon glyphicon-cloud-download panel-icon"></span>Notifications</div></a>
+                <a href="#/settings" snap-toggle="left"><div class="side-panel-item"><span class="glyphicon glyphicon-cog panel-icon"></span>Settings</div></a>
+                <a href="#/login" snap-toggle="left" ng-click="logout()"><div class="side-panel-item"><span class="glyphicon glyphicon-user panel-icon"></span>Log Out</div></a>-->
+                <a ng-repeat="menuOption in menuOptions" href="{{menuOption.route}}" snap-toggle="left" ng-click="setHeading({{menuOption}})">
+                    <div class="side-panel-item"><span class="{{menuOption.icon}} panel-icon"></span>{{menuOption.menuName}}
+                    </div>
+                </a>
+                <a href="#/login" snap-toggle="left" ng-click="logout()"><div class="side-panel-item"><span class="typcn typcn-user panel-icon"></span>Log Out</div></a>
             </div>
             <div class="side-panel" snap-drawer="right">
                 <div class="side-panel-head">Options</div>
-                <div class="side-panel-item"><span class="glyphicon glyphicon-plus-sign panel-icon"></span>Add</div>
+                <div ng-repeat="rightOptions in rightMenuOptions" class="side-panel-item"><span class="{{rightOptions.icon}} panel-icon"></span>{{rightOptions.name}}</div>
+                <!--<div class="side-panel-item"><span class="glyphicon glyphicon-plus-sign panel-icon"></span>Add</div>
                 <div class="side-panel-item"><span class="glyphicon glyphicon-plus-sign panel-icon"></span>Edit</div>
-                <div class="side-panel-item"><span class="glyphicon glyphicon-remove-sign panel-icon"></span>Delete</div>
+                <div class="side-panel-item"><span class="glyphicon glyphicon-remove-sign panel-icon"></span>Delete</div>-->
             </div>
-            <div class="container-fluid" snap-content>
-                <div class="heading container-fluid">
-                    <div class="row">
-                        <div class="col-xs-4 ">
-                            <button class="btn toggle-btn left-head" snap-toggle="left">
-                            <span class="glyphicon glyphicon-align-justify button-icon"></span>
-                            </button>
-                        </div>
-                         <div class="col-xs-4 logo-img">
-                            <img class="img-responsive" src="images/logo.png"/>
-                        </div>
-                        <div class="col-xs-4 ">
-                            <button class="btn toggle btn right-head" snap-toggle="right">
-                            <span class="glyphicon glyphicon-align-justify button-icon"></span>
-                            </button>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div ng-view="" ></div>
+
+            <div snap-content>
+                
+                <div class="container main" ng-view="" ></div>
+    
             </div>
+            
             
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
             <script>
@@ -104,6 +119,10 @@
             <script src="bower_components/snapjs/snap.js"></script>
             <script src="bower_components/angular-snap/angular-snap.js"></script>
             <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+            <script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+            <script src="bower_components/highcharts/highcharts.js"></script>
+            <script src="bower_components/highcharts/highcharts-more.js"></script>
+            <script src="bower_components/highcharts/modules/exporting.js"></script>
             <!-- endbower -->
             <!-- endbuild -->
             <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -113,6 +132,14 @@
             <script src="scripts/services/authenticate.js"></script>
             <script src="scripts/services/session.js"></script>
             <script src="scripts/controllers/apllication.js"></script>
+            <script src="scripts/controllers/graphs.js"></script>
+            <script src="scripts/controllers/commands.js"></script>
+            <script src="scripts/controllers/events.js"></script>
+            <script src="scripts/controllers/settings.js"></script>
+            <script src="scripts/services/sessiondetails.js"></script>
+            <script src="scripts/services/menu.js"></script>
+            <script src="scripts/controllers/summary.js"></script>
+            <script src="scripts/services/storageboxes.js"></script>
             <!-- endbuild -->
         </body>
     </html>
