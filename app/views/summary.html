@@ -1,0 +1,66 @@
+<div class="container dashboard">
+	<div class="row top">
+		<div class="col-xs-8 dashboard-col col-top">
+			{{networkName}}
+		</div>
+		<div class="col-xs-4 dashboard-col col-top right">
+			<span ng-click='goToNetworks()' class="typcn typcn-wi-fi"> </span>
+			
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-xs-12 dashboard-col" >
+			<div class="col-devices" ng-click="goTo('devices')">
+			<div class="col-left">
+				{{totalDevices}}
+			</div>
+			<div class="col-right">
+				<span class="typcn typcn-device-phone"><span>
+				
+			</div>
+			<div class="sub-text"> Devices</div>
+			</div>
+		
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-xs-6 dashboard-col" >
+			<div class="col-devices" ng-click="goTo('graphlist')">
+				<span class="typcn typcn-chart-line-outline"><span>
+				<div class="sub-text">Graphs</div>
+			</div>
+		</div>
+		<div class="col-xs-6 dashboard-col">
+			<div class="col-devices" ng-click="goTo('commands')">
+				<span class="typcn typcn-point-of-interest-outline"><span>
+				<div class="sub-text">Commands</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-6 dashboard-col" >
+			<div class="col-devices" ng-click="goTo('events')">
+				<span class="typcn typcn-info-large-outline"><span>
+				<div class="sub-text">Notifications</div>
+			</div>
+		</div>
+		<div class="col-xs-6 dashboard-col">
+			<div class="col-devices" ng-click="logout()">
+				<!--<span class="glyphicon glyphicon-user"></span>-->
+				<span class="typcn typcn-user"><span>
+				<div class="sub-text">Log Out</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-xs-12 dashboard-col" >
+			<div class="col-logo">
+				<img src="images/white.png"/>
+			</div>
+		</div>
+	</div>
+	
+</div>

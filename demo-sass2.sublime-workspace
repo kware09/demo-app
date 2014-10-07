@@ -1,0 +1,910 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-top: "
+			],
+			[
+				"margin-",
+				"margin-top: "
+			],
+			[
+				"margin",
+				"margin-top: "
+			],
+			[
+				"cha",
+				"chartData"
+			],
+			[
+				"border-",
+				"border-width: "
+			],
+			[
+				"marg",
+				"margin-top: "
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"primar",
+				"primary"
+			],
+			[
+				"border-top",
+				"border-top-left-radius: "
+			],
+			[
+				"border-radi",
+				"border-radius: "
+			],
+			[
+				"border",
+				"border-bottom-color: "
+			],
+			[
+				"border-ra",
+				"border-radius: "
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"bord",
+				"border-bottom-color: "
+			],
+			[
+				"border-boto",
+				"border-bottom-width: "
+			],
+			[
+				"border-bottom",
+				"border-bottom-style: "
+			],
+			[
+				"border-rad",
+				"border-top-right-radius: "
+			],
+			[
+				"border-radiu",
+				"border-top-left-radius: "
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"paddin",
+				"padding-top: "
+			],
+			[
+				"border-bot",
+				"border-bottom-style: "
+			],
+			[
+				"background",
+				"background-color: "
+			],
+			[
+				"storage",
+				"storageBox"
+			],
+			[
+				"st",
+				"storageBoxes"
+			],
+			[
+				"primary",
+				"primary-color"
+			],
+			[
+				"pri",
+				"primary-color"
+			],
+			[
+				"ackground",
+				"background-color: "
+			],
+			[
+				"backgo",
+				"background-color: "
+			],
+			[
+				"ngs",
+				"ng-show	AngularJS"
+			],
+			[
+				"bg-c",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/scripts/controllers/devices.js",
+			"settings":
+			{
+				"buffer_size": 470,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devices.html",
+			"settings":
+			{
+				"buffer_size": 456,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/graphlist.html",
+			"settings":
+			{
+				"buffer_size": 350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services/menu.js",
+			"settings":
+			{
+				"buffer_size": 719,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/summary.js",
+			"settings":
+			{
+				"buffer_size": 1278,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services/devices.js",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 12039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/graphlist.js",
+			"settings":
+			{
+				"buffer_size": 1326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services/session.js",
+			"settings":
+			{
+				"buffer_size": 382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 2493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/summary.html",
+			"settings":
+			{
+				"buffer_size": 1720,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"packagein",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"s",
+				"SassBeautify"
+			],
+			[
+				"htmlbe",
+				"HTMLBeautify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Enable Linting"
+			],
+			[
+				"sub",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"su",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kieranware/DevWork/demo-sass2/app",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services",
+		"/Users/kieranware/DevWork/demo-sass2/app/views",
+		"/Users/kieranware/DevWork/demo-sass2/bower_components/highcharts-ng/src",
+		"/Users/kieranware/DevWork/demo-sass2/test/spec",
+		"/Users/kieranware/DevWork/demo-sass2/test/spec/controllers"
+	],
+	"file_history":
+	[
+		"/Users/kieranware/DevWork/demo-sass2/test/spec/controllers/graphlist.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers/summary.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers/apllication.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/app.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/views/summary.html",
+		"/Users/kieranware/DevWork/demo-sass2/app/views/login.html",
+		"/Users/kieranware/DevWork/demo-sass2/test/spec/controllers/devices.js",
+		"/Users/kieranware/DevWork/demo-sass2/.jshintrc",
+		"/Users/kieranware/DevWork/demo-sass2/app/styles/main.scss",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers/settings.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/data.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/networks.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers/login.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/authenticate.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/session.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers/graphs.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/views/settings.html",
+		"/Users/kieranware/DevWork/demo-sass2/test/spec/services/networks.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/devices.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/index.html",
+		"/Users/kieranware/DevWork/demo-sass2/app/views/events.html",
+		"/Users/kieranware/DevWork/demo-sass2/dist/views/events.html",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/controllers/events.js",
+		"/Users/kieranware/DevWork/demo-sass2/Gruntfile.js",
+		"/Users/kieranware/DevWork/demo-sass2/dist/styles/vendor.22629240.css",
+		"/Users/kieranware/DevWork/demo-sass2/.tmp/styles/main.css",
+		"/Users/kieranware/DevWork/demo-sass2/dist/styles/main.f850083d.css",
+		"/Users/kieranware/DevWork/demo-sass2/app/styles/_animate.scss",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/menu.js",
+		"/Users/kieranware/Downloads/animate.css",
+		"/Users/kieranware/DevWork/demo-sass2/app/views/graphs.html",
+		"/Users/kieranware/DevWork/demo-sass2/app/scripts/services/storageboxes.js",
+		"/Users/kieranware/DevWork/demo-sass2/dist/views/summary.html",
+		"/Users/kieranware/DevWork/demo-sass2/.sass-cache/2b1f5c8c39cc38c862053cc44ad8443b3cbbb74c/main.scssc",
+		"/Users/kieranware/DevWork/demo-sass2/dist/views/settings.html",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/postcss/lib/syntax-error.js",
+		"/Users/kieranware/DevWork/demo-sass2/test/spec/services/menu.js",
+		"/Users/kieranware/DevWork/demo-sass2/app/images/svg/menu48.svg",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/grunt-svgmin/node_modules/svgo/plugins/moveElemsAttrsToGroup.js",
+		"/Users/kieranware/DevWork/demo-sass2/dist/views/login.html",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/karma/node_modules/log4js/lib/appenders/logLevelFilter.js",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/load-grunt-tasks/load-grunt-tasks.js",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/karma/node_modules/optimist/example/line_count_options.js",
+		"/Users/kieranware/DevWork/demo-sass2/bower_components/bootstrap-sass-official/LICENSE",
+		"/Users/kieranware/DevWork/demo-sass2/.sass-cache/bb7f679dcf61cd61a26419c02262f64ff2fcd02b/main.scssc",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/Users/kieranware/DevWork/demo-sass2/node_modules/grunt-google-cdn/node_modules/bower/node_modules/mout/lang/isNull.js",
+		"/Users/kieranware/DevWork/demo-sass2/test/spec/controllers/login.js",
+		"/Users/kieranware/DevWork/demo-sass2/package.json",
+		"/Users/kieranware/DevWork/demo-sass2/bower.json",
+		"/Users/kieranware/angular-seed/app/index.html",
+		"/Users/kieranware/angular-seed/node_modules/protractor/docs/library-only.md",
+		"/Users/kieranware/angular-seed/LICENSE",
+		"/Users/kieranware/angular-seed/README.md",
+		"/Users/kieranware/index.html",
+		"/Users/kieranware/myapp/jj",
+		"/Users/kieranware/myapp/package.json",
+		"/Users/kieranware/myapp/bear.sublime-project",
+		"/Users/kieranware/Angular/angular-seed/node_modules/.bin/shjs",
+		"/Users/kieranware/Angular/angular-seed/node_modules/bower/node_modules/handlebars/node_modules/uglify-js/node_modules/source-map/build/suffix-utils.jsm",
+		"/Users/kieranware/Angular/angular-seed/node_modules/bower/node_modules/handlebars/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.js",
+		"/Users/kieranware/Angular/angular-seed/angular.sublime-project",
+		"/Users/kieranware/Grunt/src/js/magic.js",
+		"/Users/kieranware/Grunt/src/css/pretty.less",
+		"/Users/kieranware/Grunt/src/css/style.css",
+		"/Users/kieranware/Grunt/package.json",
+		"/Users/kieranware/Grunt/Gruntfile.js",
+		"/Users/kieranware/myapp/app/models/bear.js",
+		"/Users/kieranware/myapp/server.js",
+		"/Users/kieranware/myapp/app/server.js",
+		"/Users/kieranware/myapp/app/package.json",
+		"/Users/kieranware/node/nodetest1/package.json",
+		"/Users/kieranware/Downloads/ajaxRequest.sublime-snippet",
+		"/Users/kieranware/Downloads/generateInstallScript.bat"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".slideOutRight",
+			"snapjs",
+			"@fon",
+			"\"",
+			"xs-col",
+			"selected: true,"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/controllers/devices.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								460,
+								256
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/devices.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								164
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/graphlist.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/scripts/services/menu.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								392,
+								392
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/scripts/controllers/summary.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1087,
+								1087
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/scripts/services/devices.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3723,
+								3723
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2676.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/scripts/controllers/graphlist.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/scripts/services/session.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1876,
+								1876
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/summary.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 111.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "demo-sass2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"even",
+				"dist/views/events.html"
+			],
+			[
+				"eve",
+				"app/scripts/controllers/events.js"
+			],
+			[
+				"main.scss",
+				"app/styles/main.scss"
+			],
+			[
+				"settings",
+				"app/scripts/controllers/settings.js"
+			],
+			[
+				"main",
+				"app/styles/main.scss"
+			],
+			[
+				"menu",
+				"app/scripts/services/menu.js"
+			],
+			[
+				"",
+				"app/scripts/controllers/summary.js"
+			],
+			[
+				"login",
+				"app/scripts/controllers/login.js"
+			],
+			[
+				"index",
+				"app/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/blogsite/blogsite.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 332.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

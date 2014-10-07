@@ -6,7 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // VAriables
 $font-stack: "Lato", sans-serif;
 $primary-color: #3498db;
-$second-color: #34495E;
+$second-color:                  ;
 
 @import "animate.scss";
 
@@ -137,7 +137,104 @@ table {
         font-weight: 300;
     }
 }
+//devices
+.device-page{
+    margin-top: 15px;
+    .device{
+            color:#fff;
+            background-color: $primary-color;
+            font-weight: 100;
+            margin-bottom: 2px;
 
+
+            .device-name{
+
+                font-size: 25px;
+                padding-top: 10px;
+
+
+            }
+            .device-type{
+                font-size: 15px;
+                color:$primary-color;
+                background-color: $second-color;
+                font-weight: 500;
+                padding-bottom: 10px;
+
+
+            }
+            .device-desc{
+                font-size: 15px;
+                color:$second-color;
+                font-weight: 500;
+
+            }
+            .device-value{
+                font-size: 25px;
+                background-color: $second-color;
+                padding-top: 10px;
+
+
+            }
+
+        }
+    }
+//devices
+.gl-page{
+    margin-top: 15px;
+    
+    .gl{
+            color:#fff;
+            
+            font-weight: 100;
+            margin-bottom: 2px;
+            background-color: $primary-color;
+
+
+            .gl-name{
+
+                font-size: 18px;
+                padding-top: 10px;
+
+
+
+            }
+            .gl-current{
+                font-size: 15px;
+                color:$second-color;
+                background-color: #81CFE0;
+                font-weight: 500;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+
+            }
+            .gl-desc{
+                font-size: 15px;
+                color:$second-color;
+                font-weight: 500;
+                padding-bottom: 10px;
+
+            }
+            .gl-historic{
+                font-size: 15px;
+                background-color: $second-color;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+
+            }
+
+        }
+        .gl:hover{
+            color:#fff;
+             background-color: #81CFE0;
+         }
+         .gl:focus{
+            color:#fff;
+             background-color: #81CFE0;
+         }
+    }
 //dashboard
 .dashboard {
     padding-bottom: 15px;
@@ -167,6 +264,20 @@ table {
         font-size: 25px;
         font-weight: 100;
         paddig-right: 0px;
+        .col-logo {
+
+            text-align: center;
+            //width: 120px;
+            //height: 120px;
+            //border-radius: 50%;
+            background-color: $second-color;
+            font-weight: 300;
+            //            border-style: solid;
+            //border-width: 3px;
+            border-color: $second-color;
+            font-size: 60px;
+            color: #fff;
+        }
         .col-devices {
 
             text-align: center;
@@ -188,14 +299,14 @@ table {
           .col-left{
                 display: inline-block;
                 width: 45%;
-                text-align: center;
+                text-align: right;
 
                 
             }
             .col-right{
                 display: inline-block;
                 width: 45%;
-                text-align: center;
+                text-align: left;
                
             }  
         
@@ -224,6 +335,7 @@ table {
         font-size: 20px;
         font-weight: 400;
         color: #34495E;
+        padding-left: 0px;
         .online {
             color: #2ECC71;
         }
@@ -392,7 +504,10 @@ table {
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: $primary-color;
+    background-color: #81CFE0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $primary-color;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -419,10 +534,10 @@ table {
 }
 
 .timeline-badge.primary {
-    background-color: $primary-color !important;
+    background-color: #81CFE0 !important;
 }
 
-.timeline-badge.success {
+/*.timeline-badge.success {
     background-color: #3f903f !important;
 }
 
@@ -436,7 +551,7 @@ table {
 
 .timeline-badge.info {
     background-color: #5bc0de !important;
-}
+}*/
 
 .timeline-title {
     margin-top: 0;

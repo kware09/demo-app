@@ -13,11 +13,16 @@ angular.module('demoSassApp')
     $scope.login = function(user){
     	authenticate.login(user)
     	 .success(function(data){
-            console.log(data[0].status);
+            console.log(data);
     	 	session.username = user.username;
     	 	session.password = user.password;
-    	 	session.realname = data[0].realname;
-    	 	session.isAuthenticated =data[0].status;
+            session.currNetwork = data.items[0].ds_id;
+            session.networkName = data.items[0].ds_name;
+            if (data.status === 0){
+    	 	session.isAuthenticated =true;
+         }else{
+            session.isAuthenticated =false;
+         }
     	 	if(session.isAuthenticated){
                 $rootScope.$broadcast('LOG_IN');
     	 		$location.path('/summary');

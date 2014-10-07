@@ -63,6 +63,16 @@ angular
         controller: 'SummaryCtrl',
         access:{isFree:false}
       })
+      .when('/devices', {
+        templateUrl: 'views/devices.html',
+        controller: 'DevicesCtrl',
+        access:{isFree:false}
+      })
+      .when('/graphlist', {
+        templateUrl: 'views/graphlist.html',
+        controller: 'GraphlistCtrl',
+        access:{isFree:false}
+      })
       .otherwise({
         redirectTo: '/summary',
         access:{isFree:false}
